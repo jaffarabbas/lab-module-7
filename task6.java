@@ -222,10 +222,10 @@ class test_class extends Publication{
      void view(){
         int a=0;
          do{
-            System.out.println("Enter type : ");
-            a = obj.next().charAt(0);
-            if(a == 0){
-                return;
+            System.out.println("Enter type :  \n1 for book\n2 for Magzines\n9 for stop");
+            a = obj.nextInt();
+            if(a != 1&&a!=2&&a!=9){
+                view();
                }   
                 else if(a == 1) {
                 b.Book();
@@ -240,9 +240,6 @@ class test_class extends Publication{
                 System.out.println("Stop");
                 break;  
                 } 
-               else{
-                System.out.println("Error");  
-                }
             }
          while(a == 9);
      }
