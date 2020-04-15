@@ -1,1 +1,2 @@
-            System.out.print("\n");
+ // Publication obj = new Publication();
+        // obj.Copyrighted("2020","2010");
